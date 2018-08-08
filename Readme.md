@@ -8,6 +8,7 @@ Create a class that implements the [IMessageBox](https://documentation.devexpres
 The [IMessageBox](https://documentation.devexpress.com/CoreLibraries/DevExpress.XtraSpreadsheet.Services.IMessageBoxService.class) service provides the [ShowMessage](https://documentation.devexpress.com/CoreLibraries/DevExpress.XtraSpreadsheet.Services.IMessageBoxService.ShowMessage.method), [ShowOkCancelMessage](https://documentation.devexpress.com/CoreLibraries/DevExpress.XtraSpreadsheet.Services.IMessageBoxService.ShowOkCancelMessage.method), [ShowYesNoCancelMessage](https://documentation.devexpress.com/CoreLibraries/DevExpress.XtraSpreadsheet.Services.IMessageBoxService.ShowYesNoCancelMessage.method), [ShowYesNoMessage](https://documentation.devexpress.com/CoreLibraries/DevExpress.XtraSpreadsheet.Services.IMessageBoxService.ShowYesNoMessage.method), and [ShowDataValidationDialog](https://documentation.devexpress.com/CoreLibraries/DevExpress.XtraSpreadsheet.Services.IMessageBoxService.ShowDataValidationDialog.method) methods that are called when the SpreadsheetControl needs user attention.
 
 See the following files for implementation details:
+
 CS | VB
 ------------ | -------------
 [MainWindow.xaml](./CS/WpfSpreadsheet_MessageBoxService/MainWindow.xaml) | [MainWindow.xaml](./VB/WpfSpreadsheet_MessageBoxService/MainWindow.xaml)
