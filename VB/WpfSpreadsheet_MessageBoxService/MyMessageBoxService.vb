@@ -4,6 +4,7 @@ Imports DevExpress.XtraSpreadsheet.Localization
 Imports System.Windows
 Imports System.Windows.Forms
 Imports DevExpress.XtraSpreadsheet.Services
+Imports DevExpress.Portable
 
 Namespace WpfSpreadsheet_MessageBoxService
     Public Class MyMessageBoxService
@@ -11,23 +12,23 @@ Namespace WpfSpreadsheet_MessageBoxService
 
         Private Const myMessage As String = "This is a custom message box." & vbLf & vbLf
         ' To test: enter incorrect data into cells with a data validation rule applied. 
-        Public Function ShowDataValidationDialog(ByVal message As String, ByVal title As String, ByVal errorStyle As DataValidationErrorStyle) As DialogResult Implements IMessageBoxService.ShowDataValidationDialog
+        Public Function ShowDataValidationDialog(ByVal message As String, ByVal title As String, ByVal errorStyle As DataValidationErrorStyle) As PortableDialogResult Implements IMessageBoxService.ShowDataValidationDialog
             Dim customMessage As String = myMessage & message
             If errorStyle = DataValidationErrorStyle.Stop Then
                 Dim result As MessageBoxResult = DXMessageBox.Show(customMessage, title, MessageBoxButton.OKCancel, MessageBoxImage.Stop)
-                Return If(result = MessageBoxResult.OK, DialogResult.No, CType(result, DialogResult))
+                Return If(result = MessageBoxResult.OK, PortableDialogResult.No, CType(result, PortableDialogResult))
             End If
             If errorStyle = DataValidationErrorStyle.Warning Then
-                Return CType(DXMessageBox.Show(customMessage, title, MessageBoxButton.YesNoCancel, MessageBoxImage.Warning), DialogResult)
+                Return CType(DXMessageBox.Show(customMessage, title, MessageBoxButton.YesNoCancel, MessageBoxImage.Warning), PortableDialogResult)
             End If
-            Return CType(DXMessageBox.Show(customMessage, title, MessageBoxButton.OKCancel, MessageBoxImage.Information), DialogResult)
+            Return CType(DXMessageBox.Show(customMessage, title, MessageBoxButton.OKCancel, MessageBoxImage.Information), PortableDialogResult)
         End Function
 
         ' To test: set the row height to an invalid value.
-        Public Function ShowMessage(ByVal message As String, ByVal title As String, ByVal icon As MessageBoxIcon) As DialogResult Implements IMessageBoxService.ShowMessage
+        Public Function ShowMessage(ByVal message As String, ByVal title As String, ByVal icon As PortableMessageBoxIcon) As PortableDialogResult Implements IMessageBoxService.ShowMessage
             Dim customMessage As String = myMessage & message
             DXMessageBox.Show(customMessage, title, MessageBoxButton.OK, CType(icon, MessageBoxImage))
-            Return DialogResult.OK
+            Return PortableDialogResult.OK
         End Function
 
         ' To test: select cells with different data validation rules applied and click Data Validation to invoke the Data Validation dialog.
@@ -42,7 +43,7 @@ Namespace WpfSpreadsheet_MessageBoxService
         End Function
 
         ' To test: select a cell range with and without data validation settings and click Data Validation to invoke the Data Validation dialog.
-        Public Function ShowYesNoCancelMessage(ByVal message As String) As DialogResult Implements IMessageBoxService.ShowYesNoCancelMessage
+        Public Function ShowYesNoCancelMessage(ByVal message As String) As PortableDialogResult Implements IMessageBoxService.ShowYesNoCancelMessage
             Dim customMessage As String = myMessage & message
             Return CType(DXMessageBox.Show(customMessage, System.Windows.Forms.Application.ProductName, MessageBoxButton.YesNoCancel, MessageBoxImage.Information), DialogResult)
         End Function
