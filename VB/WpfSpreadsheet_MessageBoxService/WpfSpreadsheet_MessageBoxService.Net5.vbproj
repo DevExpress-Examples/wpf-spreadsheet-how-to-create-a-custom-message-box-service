@@ -1,9 +1,9 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
 <Project Sdk="Microsoft.NET.Sdk">
   <PropertyGroup>
     <TargetFramework>net6.0-windows7.0</TargetFramework>
     <OutputType>WinExe</OutputType>
-    <RootNamespace>
-    </RootNamespace>
+    <RootNamespace></RootNamespace>
     <AssemblyName>WpfSpreadsheet_MessageBoxService</AssemblyName>
     <GenerateAssemblyInfo>false</GenerateAssemblyInfo>
     <UseWindowsForms>true</UseWindowsForms>
@@ -37,26 +37,26 @@
     <AppDesigner Include="My Project\" />
   </ItemGroup>
   <ItemGroup>
-    <PackageReference Include="DevExpress.Charts.Core" Version="21.1.*-*" />
-    <PackageReference Include="DevExpress.Data" Version="21.1.*-*" />
-    <PackageReference Include="DevExpress.Data.Desktop" Version="21.1.*-*" />
-    <PackageReference Include="DevExpress.DataVisualization.Core" Version="21.1.*-*" />
-    <PackageReference Include="DevExpress.Mvvm" Version="21.1.*-*" />
-    <PackageReference Include="DevExpress.Office.Core" Version="21.1.*-*" />
-    <PackageReference Include="DevExpress.Printing.Core" Version="21.1.*-*" />
-    <PackageReference Include="DevExpress.RichEdit.Core" Version="21.1.*-*" />
-    <PackageReference Include="DevExpress.RichEdit.Export" Version="21.1.*-*" />
-    <PackageReference Include="DevExpress.Spreadsheet.Core" Version="21.1.*-*" />
-    <PackageReference Include="DevExpress.Wpf.Charts" Version="21.1.*-*" />
-    <PackageReference Include="DevExpress.Wpf.Core" Version="21.1.*-*" />
-    <PackageReference Include="DevExpress.Wpf.Docking" Version="21.1.*-*" />
-    <PackageReference Include="DevExpress.Wpf.NavBar" Version="21.1.*-*" />
-    <PackageReference Include="DevExpress.Wpf.Office" Version="21.1.*-*" />
-    <PackageReference Include="DevExpress.Wpf.Printing" Version="21.1.*-*" />
-    <PackageReference Include="DevExpress.Wpf.Reporting" Version="21.1.*-*" />
-    <PackageReference Include="DevExpress.Wpf.Ribbon" Version="21.1.*-*" />
-    <PackageReference Include="DevExpress.Wpf.Spreadsheet" Version="21.1.*-*" />
-    <PackageReference Include="DevExpress.Wpf.Themes.Office2016White" Version="21.1.*-*" />
-    <PackageReference Include="DevExpress.Wpf.Themes.All" Version="21.1.*-*" />
+    <PackageReference Include="DevExpress.Charts.Core" Version="24.2.*-*" />
+    <PackageReference Include="DevExpress.Data" Version="24.2.*-*" />
+    <PackageReference Include="DevExpress.Data.Desktop" Version="24.2.*-*" />
+    <PackageReference Include="DevExpress.DataVisualization.Core" Version="24.2.*-*" />
+    <PackageReference Include="DevExpress.Mvvm" Version="24.2.*-*" />
+    <PackageReference Include="DevExpress.Office.Core" Version="24.2.*-*" />
+    <PackageReference Include="DevExpress.Printing.Core" Version="24.2.*-*" />
+    <PackageReference Include="DevExpress.RichEdit.Core" Version="24.2.*-*" />
+    <PackageReference Include="DevExpress.RichEdit.Export" Version="24.2.*-*" />
+    <PackageReference Include="DevExpress.Spreadsheet.Core" Version="24.2.*-*" />
+    <PackageReference Include="DevExpress.Wpf.Charts" Version="24.2.*-*" />
+    <PackageReference Include="DevExpress.Wpf.Core" Version="24.2.*-*" />
+    <PackageReference Include="DevExpress.Wpf.Docking" Version="24.2.*-*" />
+    <PackageReference Include="DevExpress.Wpf.NavBar" Version="24.2.*-*" />
+    <PackageReference Include="DevExpress.Wpf.Office" Version="24.2.*-*" />
+    <PackageReference Include="DevExpress.Wpf.Printing" Version="24.2.*-*" />
+    <PackageReference Include="DevExpress.Wpf.Reporting" Version="24.2.*-*" />
+    <PackageReference Include="DevExpress.Wpf.Ribbon" Version="24.2.*-*" />
+    <PackageReference Include="DevExpress.Wpf.Spreadsheet" Version="24.2.*-*" />
+    <PackageReference Include="DevExpress.Wpf.Themes.Office2016White" Version="24.2.*-*" />
+    <PackageReference Include="DevExpress.Wpf.Themes.All" Version="24.2.*-*" />
   </ItemGroup>
 </Project>
