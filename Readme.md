@@ -21,7 +21,7 @@ CS | VB
 [MainWindow.xaml.cs](./CS/WpfSpreadsheet_MessageBoxService/MainWindow.xaml.cs) | [MainWindow.xaml.vb](./VB/WpfSpreadsheet_MessageBoxService/MainWindow.xaml.vb)
 [**MyMessageBoxService.cs**](./CS/WpfSpreadsheet_MessageBoxService/MyMessageBoxService.cs) | [**MyMessageBoxService.vb**](./VB/WpfSpreadsheet_MessageBoxService/MyMessageBoxService.vb)
 <!-- feedback -->
-## Does this example address your development requirements/objectives?
+## Does This Example Address Your Development Requirements/Objectives?
 
 [<img src="https://www.devexpress.com/support/examples/i/yes-button.svg"/>](https://www.devexpress.com/support/examples/survey.xml?utm_source=github&utm_campaign=wpf-spreadsheet-how-to-create-a-custom-message-box-service&~~~was_helpful=yes) [<img src="https://www.devexpress.com/support/examples/i/no-button.svg"/>](https://www.devexpress.com/support/examples/survey.xml?utm_source=github&utm_campaign=wpf-spreadsheet-how-to-create-a-custom-message-box-service&~~~was_helpful=no)
 
